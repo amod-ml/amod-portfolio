@@ -215,10 +215,10 @@ export default function Home() {
                     <h3 className="text-lg font-semibold text-foreground">Consultant Generative AI Engineer</h3>
                     <p className="text-sm text-accent font-medium">Arcadea Group</p>
                   </div>
-                  <p className="text-sm text-muted-foreground font-mono mt-1 md:mt-0">2025 - Present</p>
+                  <p className="text-sm text-muted-foreground font-mono mt-1 md:mt-0">Jul 2025 - Present</p>
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Leading AI strategy for Vertical SaaS acquisitions and pipeline optimization. Toronto/Remote.
+                  Consulting AI strategy for Vertical SaaS acquisitions and pipeline optimization. Toronto/Remote.
                 </p>
               </div>
 
@@ -230,10 +230,10 @@ export default function Home() {
                     <h3 className="text-lg font-semibold text-foreground">AI/ML Engineer</h3>
                     <p className="text-sm text-muted-foreground font-medium">Altrium</p>
                   </div>
-                  <p className="text-sm text-muted-foreground font-mono mt-1 md:mt-0">2024 - Present</p>
+                  <p className="text-sm text-muted-foreground font-mono mt-1 md:mt-0">May 2024 - Aug 2025</p>
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Spearheaded the Automated AI Interview System (Sentiva) and multi-agent architectures.
+                  Spearheaded the Automated AI Interview System for <a href="https://www.sentiva.ai/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Sentiva</a> and multi-agent architectures for <a href="https://planyear.ai/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">PlanYear</a>.
                 </p>
               </div>
 
@@ -245,7 +245,7 @@ export default function Home() {
                     <h3 className="text-lg font-semibold text-foreground">Associate Machine Learning Engineer</h3>
                     <p className="text-sm text-muted-foreground font-medium">Insighture</p>
                   </div>
-                  <p className="text-sm text-muted-foreground font-mono mt-1 md:mt-0">2024 - Present</p>
+                  <p className="text-sm text-muted-foreground font-mono mt-1 md:mt-0">2023 - May 2024</p>
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   Responsible for designing and deployment of all GenAI features in a novel DevOps Automation Suite (Stealth).

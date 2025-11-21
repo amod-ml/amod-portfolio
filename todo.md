@@ -39,3 +39,14 @@
 - [x] Update Altrium role to second position
 - [x] Add Insighture role (Associate Machine Learning Engineer)
 - [x] Commit changes to GitHub
+
+## Experience Updates
+
+- [x] Update Arcadea Group dates to Jul 2025 - Present
+- [x] Change "Leading" to "Consulting" in Arcadea description
+- [x] Update Altrium dates to May 2024 - Aug 2025
+- [x] Add Sentiva link (https://www.sentiva.ai/) to Altrium description
+- [x] Add PlanYear link (https://planyear.ai/) to Altrium description
+- [x] Update Insighture dates to 2023 - May 2024
+- [x] Fix site title (requires Management UI update to 'Amod')
+- [ ] Commit changes to GitHub
