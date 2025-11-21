@@ -49,4 +49,4 @@
 - [x] Add PlanYear link (https://planyear.ai/) to Altrium description
 - [x] Update Insighture dates to 2023 - May 2024
 - [x] Fix site title (requires Management UI update to 'Amod')
-- [ ] Commit changes to GitHub
+- [x] Commit changes to GitHub
