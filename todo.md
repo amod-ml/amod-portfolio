@@ -38,4 +38,4 @@
 - [x] Remove Industrial AI & Math Modeling Advisory role
 - [x] Update Altrium role to second position
 - [x] Add Insighture role (Associate Machine Learning Engineer)
-- [ ] Commit changes to GitHub
+- [x] Commit changes to GitHub
