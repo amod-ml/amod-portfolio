@@ -28,3 +28,14 @@
 - [x] Add pulsar burst animations
 - [x] Fill dead space in hero card below profile section
 - [x] Commit fixes to GitHub
+
+## Content Updates
+
+- [x] Update dataset link to https://huggingface.co/datasets/Amod/mental_health_counseling_conversations
+- [x] Highlight dataset commercial availability (RAIL-D licence)
+- [x] Update dataset statistics (100k+ all-time downloads, 9500+ in Nov 2025)
+- [x] Update hero card metrics to reflect 100k+ downloads
+- [x] Remove Industrial AI & Math Modeling Advisory role
+- [x] Update Altrium role to second position
+- [x] Add Insighture role (Associate Machine Learning Engineer)
+- [ ] Commit changes to GitHub

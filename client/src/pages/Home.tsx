@@ -50,7 +50,7 @@ export default function Home() {
                 {/* Key Highlights */}
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-3 pt-4 border-t border-border/50">
                   <div className="space-y-1">
-                    <p className="text-2xl font-bold text-accent">77k+</p>
+                    <p className="text-2xl font-bold text-accent">100k+</p>
                     <p className="text-xs text-muted-foreground">Dataset Downloads</p>
                   </div>
                   <div className="space-y-1">
@@ -168,18 +168,19 @@ export default function Home() {
               {/* Project 2 */}
               <div className="space-y-3 group">
                 <div className="flex items-start justify-between">
-                  <h3 className="text-lg font-semibold text-foreground group-hover:text-accent transition-colors">Mental Health Dataset</h3>
-                  <a href="https://huggingface.co/Amod" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
+                  <h3 className="text-lg font-semibold text-foreground group-hover:text-accent transition-colors">Mental Health Counseling Dataset</h3>
+                  <a href="https://huggingface.co/datasets/Amod/mental_health_counseling_conversations" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
                     <ExternalLink className="w-4 h-4" />
                   </a>
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Created the most downloaded mental health conversational dataset on Hugging Face (77k+ downloads). Fine-tuned Mistral7B/Falcon7B for therapy applications.
+                  The most impactful contribution to the AI community: 100k+ all-time downloads since 2023, with 9.5k+ downloads in Nov 2025 alone. Now commercially available under RAIL-D license. Fine-tuned Mistral7B/Falcon7B for therapy applications.
                 </p>
                 <div className="flex flex-wrap gap-2">
+                  <span className="px-2 py-0.5 bg-accent/20 text-accent-foreground font-mono text-xs rounded border border-accent/30">100k+ DLs</span>
+                  <span className="px-2 py-0.5 bg-muted text-muted-foreground font-mono text-xs rounded">RAIL-D License</span>
                   <span className="px-2 py-0.5 bg-muted text-muted-foreground font-mono text-xs rounded">HuggingFace</span>
                   <span className="px-2 py-0.5 bg-muted text-muted-foreground font-mono text-xs rounded">Fine-tuning</span>
-                  <span className="px-2 py-0.5 bg-muted text-muted-foreground font-mono text-xs rounded">77k+ DLs</span>
                 </div>
               </div>
 
@@ -226,13 +227,13 @@ export default function Home() {
                 <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-muted"></div>
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-2">
                   <div>
-                    <h3 className="text-lg font-semibold text-foreground">Industrial AI & Math Modeling Advisory</h3>
-                    <p className="text-sm text-muted-foreground font-medium">AyistGroup</p>
+                    <h3 className="text-lg font-semibold text-foreground">AI/ML Engineer</h3>
+                    <p className="text-sm text-muted-foreground font-medium">Altrium</p>
                   </div>
                   <p className="text-sm text-muted-foreground font-mono mt-1 md:mt-0">2024 - Present</p>
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Developing digital-twin frameworks and MLOps architecture.
+                  Spearheaded the Automated AI Interview System (Sentiva) and multi-agent architectures.
                 </p>
               </div>
 
@@ -241,13 +242,13 @@ export default function Home() {
                 <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-muted"></div>
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-2">
                   <div>
-                    <h3 className="text-lg font-semibold text-foreground">AI/ML Engineer</h3>
-                    <p className="text-sm text-muted-foreground font-medium">Altrium</p>
+                    <h3 className="text-lg font-semibold text-foreground">Associate Machine Learning Engineer</h3>
+                    <p className="text-sm text-muted-foreground font-medium">Insighture</p>
                   </div>
                   <p className="text-sm text-muted-foreground font-mono mt-1 md:mt-0">2024 - Present</p>
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Spearheaded the Automated AI Interview System (Sentiva) and multi-agent architectures.
+                  Responsible for designing and deployment of all GenAI features in a novel DevOps Automation Suite (Stealth).
                 </p>
               </div>
 
