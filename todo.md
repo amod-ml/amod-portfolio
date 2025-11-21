@@ -9,4 +9,14 @@
 - [x] Implement Bento Grid layout (modular rectangular blocks)
 - [x] Ensure mobile responsiveness (grid collapses to vertical stack)
 - [x] Test all sections in browser
-- [ ] Create checkpoint and deploy
+- [x] Create checkpoint and deploy
+
+## New Feature Requests
+
+- [x] Add profile image to portfolio
+- [x] Redesign with cosmic interstellar dark theme (backgrounds, stars)
+- [x] Add subtle animations (stars, comets)
+- [x] Update specialization to LLMOps and Custom AI solutions
+- [x] Update Agentic stack to: Agno, PydanticAI, CrewAI, Google ADK
+- [ ] Create GitHub repository
+- [ ] Deploy to Vercel

@@ -1,33 +1,55 @@
 import { Card } from "@/components/ui/card";
 import { Github, Linkedin, Mail, Globe, ExternalLink } from "lucide-react";
+import Starfield from "@/components/Starfield";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background font-sans">
-      <div className="container py-8 md:py-12">
+    <div className="min-h-screen bg-background font-sans relative overflow-hidden">
+      {/* Cosmic Starfield Background */}
+      <Starfield />
+      
+      {/* Gradient Overlay */}
+      <div className="fixed inset-0 bg-gradient-to-b from-background via-background/95 to-background/90 pointer-events-none z-0" />
+      
+      <div className="container py-8 md:py-12 relative z-10">
         {/* Bento Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-4 auto-rows-auto">
           
-          {/* Hero Module - Large */}
-          <Card className="md:col-span-8 md:row-span-2 p-8 md:p-12 bg-card border-border">
+          {/* Hero Module with Profile Image */}
+          <Card className="md:col-span-8 md:row-span-2 p-8 md:p-12 bg-card/80 backdrop-blur-sm border-border shadow-lg shadow-accent/5">
             <div className="flex flex-col justify-between h-full">
-              <div>
-                <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-4 tracking-tight">
-                  Amod Sandeepa Sahabandu
-                </h1>
-                <p className="text-lg md:text-xl text-muted-foreground mb-6 leading-relaxed">
-                  Engineering that matters. Specializing in <span className="text-accent font-medium">Agentic Systems</span>, <span className="text-accent font-medium">Voice AI</span>, and <span className="text-accent font-medium">Vertical SaaS AI Strategy</span>.
-                </p>
+              <div className="flex flex-col md:flex-row gap-6 items-start">
+                {/* Profile Image */}
+                <div className="shrink-0">
+                  <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-accent/30 shadow-lg shadow-accent/20 ring-2 ring-accent/10">
+                    <img 
+                      src="/profile.jpg" 
+                      alt="Amod Sandeepa Sahabandu" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+                
+                {/* Hero Text */}
+                <div className="flex-1">
+                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 tracking-tight">
+                    Amod Sandeepa Sahabandu
+                  </h1>
+                  <p className="text-lg md:text-xl text-muted-foreground mb-6 leading-relaxed">
+                    Engineering that matters. Specializing in <span className="text-accent font-medium">LLMOps</span> and architecting <span className="text-accent font-medium">Custom AI Solutions</span>.
+                  </p>
+                </div>
               </div>
-              <div className="space-y-2 font-mono text-sm text-muted-foreground">
-                <p><span className="text-foreground">Status:</span> Consultant GenAI Engineer @ Arcadea Group (Toronto/Remote)</p>
-                <p><span className="text-foreground">Location:</span> Earth (Base: Sri Lanka)</p>
+              
+              <div className="space-y-2 font-mono text-sm text-muted-foreground mt-6">
+                <p><span className="text-primary">Status:</span> Consultant GenAI Engineer @ Arcadea Group (Toronto/Remote)</p>
+                <p><span className="text-primary">Location:</span> Earth (Base: Sri Lanka)</p>
               </div>
             </div>
           </Card>
 
           {/* Links/Socials Module */}
-          <Card className="md:col-span-4 md:row-span-1 p-6 bg-card border-border">
+          <Card className="md:col-span-4 md:row-span-1 p-6 bg-card/80 backdrop-blur-sm border-border shadow-lg shadow-accent/5">
             <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-4">Connect</h2>
             <div className="space-y-3">
               <a href="https://github.com/amod-ml" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-foreground hover:text-accent transition-colors group">
@@ -59,7 +81,7 @@ export default function Home() {
           </Card>
 
           {/* Stack Module - Visual */}
-          <Card className="md:col-span-4 md:row-span-1 p-6 bg-card border-border">
+          <Card className="md:col-span-4 md:row-span-1 p-6 bg-card/80 backdrop-blur-sm border-border shadow-lg shadow-accent/5">
             <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-4">Stack</h2>
             <div className="space-y-4">
               <div>
@@ -74,10 +96,10 @@ export default function Home() {
               <div>
                 <p className="text-xs text-muted-foreground mb-2">Agentic</p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-2 py-1 bg-accent/10 text-accent font-mono text-xs rounded border border-accent/20">CrewAI</span>
-                  <span className="px-2 py-1 bg-accent/10 text-accent font-mono text-xs rounded border border-accent/20">Agno</span>
-                  <span className="px-2 py-1 bg-accent/10 text-accent font-mono text-xs rounded border border-accent/20">Google ADK</span>
-                  <span className="px-2 py-1 bg-accent/10 text-accent font-mono text-xs rounded border border-accent/20">SmolAgents</span>
+                  <span className="px-2 py-1 bg-accent/20 text-accent-foreground font-mono text-xs rounded border border-accent/30">Agno</span>
+                  <span className="px-2 py-1 bg-accent/20 text-accent-foreground font-mono text-xs rounded border border-accent/30">PydanticAI</span>
+                  <span className="px-2 py-1 bg-accent/20 text-accent-foreground font-mono text-xs rounded border border-accent/30">CrewAI</span>
+                  <span className="px-2 py-1 bg-accent/20 text-accent-foreground font-mono text-xs rounded border border-accent/30">Google ADK</span>
                 </div>
               </div>
               <div>
@@ -103,7 +125,7 @@ export default function Home() {
           </Card>
 
           {/* Featured Work Module - 3 Projects */}
-          <Card className="md:col-span-12 p-8 bg-card border-border">
+          <Card className="md:col-span-12 p-8 bg-card/80 backdrop-blur-sm border-border shadow-lg shadow-accent/5">
             <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-6">Featured Work</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               
@@ -162,13 +184,13 @@ export default function Home() {
           </Card>
 
           {/* Experience Timeline Module */}
-          <Card className="md:col-span-12 p-8 bg-card border-border">
+          <Card className="md:col-span-12 p-8 bg-card/80 backdrop-blur-sm border-border shadow-lg shadow-accent/5">
             <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-6">Experience</h2>
             <div className="space-y-6">
               
               {/* Experience 1 */}
               <div className="border-l-2 border-accent pl-6 relative">
-                <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-accent"></div>
+                <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-accent shadow-lg shadow-accent/50"></div>
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-2">
                   <div>
                     <h3 className="text-lg font-semibold text-foreground">Consultant Generative AI Engineer</h3>
