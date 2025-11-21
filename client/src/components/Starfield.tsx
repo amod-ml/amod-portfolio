@@ -18,15 +18,27 @@ export default function Starfield() {
       starfieldRef.current.appendChild(star);
     }
 
-    // Generate comets
-    const numComets = 3;
+    // Generate comets (shooting stars)
+    const numComets = 8;
     for (let i = 0; i < numComets; i++) {
       const comet = document.createElement('div');
       comet.className = 'comet';
-      comet.style.top = `${Math.random() * 50}%`;
-      comet.style.animationDelay = `${Math.random() * 15}s`;
-      comet.style.animationDuration = `${12 + Math.random() * 8}s`;
+      comet.style.top = `${Math.random() * 60}%`;
+      comet.style.animationDelay = `${Math.random() * 20}s`;
+      comet.style.animationDuration = `${8 + Math.random() * 6}s`;
       starfieldRef.current.appendChild(comet);
+    }
+
+    // Generate pulsars
+    const numPulsars = 5;
+    for (let i = 0; i < numPulsars; i++) {
+      const pulsar = document.createElement('div');
+      pulsar.className = 'pulsar';
+      pulsar.style.left = `${Math.random() * 100}%`;
+      pulsar.style.top = `${Math.random() * 100}%`;
+      pulsar.style.animationDelay = `${Math.random() * 2}s`;
+      pulsar.style.animationDuration = `${1.5 + Math.random() * 2}s`;
+      starfieldRef.current.appendChild(pulsar);
     }
   }, []);
 

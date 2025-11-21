@@ -41,9 +41,27 @@ export default function Home() {
                 </div>
               </div>
               
-              <div className="space-y-2 font-mono text-sm text-muted-foreground mt-6">
-                <p><span className="text-primary">Status:</span> Consultant GenAI Engineer @ Arcadea Group (Toronto/Remote)</p>
-                <p><span className="text-primary">Location:</span> Earth (Base: Sri Lanka)</p>
+              <div className="space-y-3 mt-6">
+                <div className="space-y-2 font-mono text-sm text-muted-foreground">
+                  <p><span className="text-primary">Status:</span> Consultant GenAI Engineer @ Arcadea Group (Toronto/Remote)</p>
+                  <p><span className="text-primary">Location:</span> Earth (Base: Sri Lanka)</p>
+                </div>
+                
+                {/* Key Highlights */}
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-3 pt-4 border-t border-border/50">
+                  <div className="space-y-1">
+                    <p className="text-2xl font-bold text-accent">77k+</p>
+                    <p className="text-xs text-muted-foreground">Dataset Downloads</p>
+                  </div>
+                  <div className="space-y-1">
+                    <p className="text-2xl font-bold text-accent">3+</p>
+                    <p className="text-xs text-muted-foreground">Years in AI/ML</p>
+                  </div>
+                  <div className="space-y-1">
+                    <p className="text-2xl font-bold text-accent">10+</p>
+                    <p className="text-xs text-muted-foreground">Production Systems</p>
+                  </div>
+                </div>
               </div>
             </div>
           </Card>

@@ -18,5 +18,13 @@
 - [x] Add subtle animations (stars, comets)
 - [x] Update specialization to LLMOps and Custom AI solutions
 - [x] Update Agentic stack to: Agno, PydanticAI, CrewAI, Google ADK
-- [ ] Create GitHub repository
-- [ ] Deploy to Vercel
+- [x] Create GitHub repository
+- [x] Deploy to Vercel (manual setup instructions provided)
+
+## Bug Fixes & Enhancements
+
+- [x] Fix Vercel deployment error (remove server/index.ts, configure for static build)
+- [x] Enhance starfield animations (more visible shooting stars)
+- [x] Add pulsar burst animations
+- [x] Fill dead space in hero card below profile section
+- [ ] Commit fixes to GitHub
