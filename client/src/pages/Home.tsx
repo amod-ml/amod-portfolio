@@ -174,7 +174,7 @@ export default function Home() {
                   </a>
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  The most impactful contribution to the AI community: 100k+ all-time downloads since 2023, with 9.5k+ downloads in Nov 2025 alone. Now commercially available under RAIL-D license. Fine-tuned Mistral7B/Falcon7B for therapy applications.
+                  The most impactful contribution to the AI community: 100k+ all-time downloads since 2023, with 10k+ downloads in November 2025 alone. Now commercially available under RAIL-D license. Fine-tuned Mistral7B/Falcon7B for therapy applications.
                 </p>
                 <div className="flex flex-wrap gap-2">
                   <span className="px-2 py-0.5 bg-accent/20 text-accent-foreground font-mono text-xs rounded border border-accent/30">100k+ DLs</span>
@@ -199,6 +199,90 @@ export default function Home() {
                 </div>
               </div>
 
+            </div>
+          </Card>
+
+          {/* AI Forward Deployed Engineering Module */}
+          <Card className="md:col-span-12 p-8 bg-card/80 backdrop-blur-sm border-border shadow-lg shadow-accent/5">
+            <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-6">AI Forward Deployed Engineering</h2>
+            <div className="space-y-6">
+              <p className="text-base text-muted-foreground leading-relaxed">
+                As an <span className="text-accent font-medium">AI Forward Deployed Engineer</span>, I serve as the technical bridge between AI capabilities and strategic customers, embedding directly with client teams to architect, deploy, and scale custom AI solutions in production environments. Think of it as being a hands-on AI startup CTO for high-stakes enterprise projects.
+              </p>
+              
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-3">
+                  <h3 className="text-sm font-semibold text-foreground uppercase tracking-wide">Customer Integration & Deployment</h3>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Partner with enterprise customers to understand technical infrastructure, data pipelines, and business requirements</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Design custom integrations between AI platforms and customer data environments (cloud, warehouses, APIs)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Deploy AI models within customer security and compliance boundaries</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div className="space-y-3">
+                  <h3 className="text-sm font-semibold text-foreground uppercase tracking-wide">AI Agent & Solution Development</h3>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Develop production-grade AI agents for customer support, data analysis, and workflow automation</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Architect multi-agent systems orchestrating models, tools, and data sources</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Implement evaluation frameworks and human-in-the-loop workflows for continuous improvement</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div className="space-y-3">
+                  <h3 className="text-sm font-semibold text-foreground uppercase tracking-wide">Technical Leadership</h3>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Serve as primary technical point of contact for strategic enterprise accounts</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Provide technical training and knowledge transfer to customer teams</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Translate customer needs into product improvements</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div className="space-y-3">
+                  <h3 className="text-sm font-semibold text-foreground uppercase tracking-wide">Prompt Engineering & Optimization</h3>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Create sophisticated prompt engineering strategies optimized for customer domains</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Conduct systematic prompt experimentation and A/B testing</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Implement RAG systems and fine-tuning pipelines where appropriate</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </Card>
 

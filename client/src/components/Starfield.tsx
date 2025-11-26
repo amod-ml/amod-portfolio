@@ -6,8 +6,8 @@ export default function Starfield() {
   useEffect(() => {
     if (!starfieldRef.current) return;
 
-    // Generate stars
-    const numStars = 150;
+    // Generate background stars (static, no animation for performance)
+    const numStars = 200;
     for (let i = 0; i < numStars; i++) {
       const star = document.createElement('div');
       star.className = 'star';
@@ -18,56 +18,74 @@ export default function Starfield() {
       starfieldRef.current.appendChild(star);
     }
 
-    // Generate comets (shooting stars) - dramatically increased
-    const numComets = 20;
+    // Generate comets (shooting stars) - optimized count
+    const numComets = 12;
     for (let i = 0; i < numComets; i++) {
       const comet = document.createElement('div');
       comet.className = 'comet';
       comet.style.top = `${Math.random() * 80}%`;
       comet.style.animationDelay = `${Math.random() * 15}s`;
       comet.style.animationDuration = `${6 + Math.random() * 8}s`;
+      comet.setAttribute('data-speed', String(0.5 + Math.random() * 0.5)); // For parallax
       starfieldRef.current.appendChild(comet);
     }
 
-    // Generate pulsars - dramatically increased
-    const numPulsars = 15;
-    for (let i = 0; i < numPulsars; i++) {
-      const pulsar = document.createElement('div');
-      pulsar.className = 'pulsar';
-      pulsar.style.left = `${Math.random() * 100}%`;
-      pulsar.style.top = `${Math.random() * 100}%`;
-      pulsar.style.animationDelay = `${Math.random() * 3}s`;
-      pulsar.style.animationDuration = `${1 + Math.random() * 2.5}s`;
-      starfieldRef.current.appendChild(pulsar);
-    }
-
-    // Generate nebula clouds
-    const numNebulae = 5;
-    for (let i = 0; i < numNebulae; i++) {
-      const nebula = document.createElement('div');
-      nebula.className = 'nebula';
-      const size = 200 + Math.random() * 300;
-      nebula.style.width = `${size}px`;
-      nebula.style.height = `${size}px`;
-      nebula.style.left = `${Math.random() * 100}%`;
-      nebula.style.top = `${Math.random() * 100}%`;
-      nebula.style.background = `radial-gradient(circle, rgba(168, 139, 250, 0.3) 0%, rgba(168, 139, 250, 0) 70%)`;
-      nebula.style.animationDelay = `${Math.random() * 10}s`;
-      nebula.style.animationDuration = `${25 + Math.random() * 20}s`;
-      starfieldRef.current.appendChild(nebula);
-    }
-
-    // Generate distant galaxies
-    const numGalaxies = 30;
+    // Generate distant galaxies - optimized
+    const numGalaxies = 20;
     for (let i = 0; i < numGalaxies; i++) {
       const galaxy = document.createElement('div');
       galaxy.className = 'galaxy';
       galaxy.style.left = `${Math.random() * 100}%`;
       galaxy.style.top = `${Math.random() * 100}%`;
       galaxy.style.animationDelay = `${Math.random() * 5}s`;
+      galaxy.setAttribute('data-speed', String(0.2 + Math.random() * 0.3)); // Slower parallax
       starfieldRef.current.appendChild(galaxy);
     }
+
+    // Parallax scrolling effect
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      
+      // Apply parallax to comets
+      const comets = starfieldRef.current?.querySelectorAll('.comet');
+      comets?.forEach((comet) => {
+        const speed = parseFloat(comet.getAttribute('data-speed') || '0.5');
+        (comet as HTMLElement).style.transform = `translateY(${scrollY * speed}px)`;
+      });
+
+      // Apply parallax to galaxies (slower)
+      const galaxies = starfieldRef.current?.querySelectorAll('.galaxy');
+      galaxies?.forEach((galaxy) => {
+        const speed = parseFloat(galaxy.getAttribute('data-speed') || '0.2');
+        (galaxy as HTMLElement).style.transform = `translateY(${scrollY * speed}px)`;
+      });
+    };
+
+    // Use passive listener for better performance
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
-  return <div ref={starfieldRef} className="starfield" />;
+  return (
+    <>
+      <div ref={starfieldRef} className="starfield" />
+      {/* Milky Way SVG overlay */}
+      <div className="milky-way-container">
+        <svg className="milky-way" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <radialGradient id="milkyGradient" cx="50%" cy="50%">
+              <stop offset="0%" stopColor="rgba(168, 139, 250, 0.3)" />
+              <stop offset="50%" stopColor="rgba(168, 139, 250, 0.15)" />
+              <stop offset="100%" stopColor="rgba(168, 139, 250, 0)" />
+            </radialGradient>
+          </defs>
+          <ellipse cx="960" cy="540" rx="800" ry="200" fill="url(#milkyGradient)" opacity="0.6" transform="rotate(-30 960 540)" />
+          <ellipse cx="960" cy="540" rx="700" ry="150" fill="url(#milkyGradient)" opacity="0.4" transform="rotate(-30 960 540)" />
+        </svg>
+      </div>
+    </>
+  );
 }
