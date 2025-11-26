@@ -70,4 +70,4 @@
 - [x] Update dataset downloads to 10k+ in November alone
 - [x] Add AI Forward Deployed Engineering content section
 - [x] Test performance in browser
-- [ ] Commit to GitHub
+- [x] Commit to GitHub (via checkpoint)
