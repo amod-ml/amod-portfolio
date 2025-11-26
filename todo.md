@@ -50,3 +50,12 @@
 - [x] Update Insighture dates to 2023 - May 2024
 - [x] Fix site title (requires Management UI update to 'Amod')
 - [x] Commit changes to GitHub
+
+## Cosmic Background Enhancement
+
+- [x] Increase comet visibility (10x brighter, larger trails)
+- [x] Increase pulsar visibility (10x brighter, more dramatic bursts)
+- [x] Add more cosmic elements (nebula clouds, distant galaxies)
+- [x] Increase number of animated elements (20 comets, 15 pulsars, 5 nebulae, 30 galaxies)
+- [x] Test site thoroughly
+- [x] Commit to GitHub for Vercel deployment
