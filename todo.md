@@ -93,4 +93,13 @@
 - [x] Update HuggingFace icon to proper 🤗 emoji design
 - [x] Create Obsidian icon SVG
 - [x] Add Obsidian digital garden link (https://notes.amod.dev/)
+- [x] Commit to GitHub
+
+## SEO Structured Data
+
+- [x] Create JSON-LD Person schema
+- [x] Create JSON-LD ProfilePage schema
+- [x] Create JSON-LD Dataset schema for mental health dataset
+- [x] Add Open Graph meta tags
+- [x] Add Twitter Card meta tags
 - [ ] Commit to GitHub
