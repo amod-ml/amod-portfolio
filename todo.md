@@ -77,4 +77,12 @@
 - [x] Create cosmic-themed favicon SVG
 - [x] Generate favicon.ico from SVG
 - [x] Update HTML with favicon links
-- [ ] Commit to GitHub to trigger Vercel deployment
+- [x] Commit to GitHub to trigger Vercel deployment
+
+## Icons & Content Updates
+
+- [x] Create custom HuggingFace icon component
+- [x] Create custom Medium icon component
+- [x] Update dataset description to emphasize "world's most downloaded open-access mental health dataset"
+- [x] Add resume download button with Dropbox link
+- [ ] Commit to GitHub

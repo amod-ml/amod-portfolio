@@ -1,6 +1,8 @@
 import { Card } from "@/components/ui/card";
-import { Github, Linkedin, Mail, Globe, ExternalLink } from "lucide-react";
+import { Github, Linkedin, Mail, ExternalLink, Download } from "lucide-react";
 import Starfield from "@/components/Starfield";
+import HuggingFaceIcon from "@/components/icons/HuggingFaceIcon";
+import MediumIcon from "@/components/icons/MediumIcon";
 
 export default function Home() {
   return (
@@ -35,9 +37,18 @@ export default function Home() {
                   <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 tracking-tight">
                     Amod Sandeepa Sahabandu
                   </h1>
-                  <p className="text-lg md:text-xl text-muted-foreground mb-6 leading-relaxed">
+                  <p className="text-lg md:text-xl text-muted-foreground mb-4 leading-relaxed">
                     Engineering that matters. Specializing in <span className="text-accent font-medium">LLMOps</span> and architecting <span className="text-accent font-medium">Custom AI Solutions</span>.
                   </p>
+                  <a 
+                    href="https://www.dropbox.com/scl/fi/g90tw5rpsnpxy9x6787qw/Amod-Sandeepa-Sahabandu-Resume-20251127.pdf?rlkey=o3xs8tyeye27wyczhbli9gj1x&st=pj31m3wz&dl=1" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-accent text-accent-foreground font-medium rounded-md hover:bg-accent/90 transition-colors shadow-lg shadow-accent/20"
+                  >
+                    <Download className="w-4 h-4" />
+                    Download Resume
+                  </a>
                 </div>
               </div>
               
@@ -76,7 +87,7 @@ export default function Home() {
                 <ExternalLink className="w-3 h-3 ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
               </a>
               <a href="https://huggingface.co/Amod" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-foreground hover:text-accent transition-colors group">
-                <Globe className="w-5 h-5" />
+                <HuggingFaceIcon className="w-5 h-5" />
                 <span className="font-mono text-sm">HuggingFace</span>
                 <ExternalLink className="w-3 h-3 ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
               </a>
@@ -86,7 +97,7 @@ export default function Home() {
                 <ExternalLink className="w-3 h-3 ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
               </a>
               <a href="https://medium.com/@amodwrites" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-foreground hover:text-accent transition-colors group">
-                <Globe className="w-5 h-5" />
+                <MediumIcon className="w-5 h-5" />
                 <span className="font-mono text-sm">Medium</span>
                 <ExternalLink className="w-3 h-3 ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
               </a>
@@ -174,7 +185,7 @@ export default function Home() {
                   </a>
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  The most impactful contribution to the AI community: 100k+ all-time downloads since 2023, with 10k+ downloads in November 2025 alone. Now commercially available under RAIL-D license. Fine-tuned Mistral7B/Falcon7B for therapy applications.
+                  <span className="text-accent font-semibold">The world's most downloaded open-access mental health dataset.</span> 100k+ all-time downloads since 2023, with 10k+ downloads in November 2025 alone. Now commercially available under RAIL-D license. Fine-tuned Mistral7B/Falcon7B for therapy applications.
                 </p>
                 <div className="flex flex-wrap gap-2">
                   <span className="px-2 py-0.5 bg-accent/20 text-accent-foreground font-mono text-xs rounded border border-accent/30">100k+ DLs</span>
