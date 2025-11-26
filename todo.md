@@ -85,4 +85,12 @@
 - [x] Create custom Medium icon component
 - [x] Update dataset description to emphasize "world's most downloaded open-access mental health dataset"
 - [x] Add resume download button with Dropbox link
+- [x] Commit to GitHub
+
+## Content & Icon Refinements
+
+- [x] Remove informal text from AI FDE section
+- [x] Update HuggingFace icon to proper 🤗 emoji design
+- [x] Create Obsidian icon SVG
+- [x] Add Obsidian digital garden link (https://notes.amod.dev/)
 - [ ] Commit to GitHub

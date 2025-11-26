@@ -3,6 +3,7 @@ import { Github, Linkedin, Mail, ExternalLink, Download } from "lucide-react";
 import Starfield from "@/components/Starfield";
 import HuggingFaceIcon from "@/components/icons/HuggingFaceIcon";
 import MediumIcon from "@/components/icons/MediumIcon";
+import ObsidianIcon from "@/components/icons/ObsidianIcon";
 
 export default function Home() {
   return (
@@ -99,6 +100,11 @@ export default function Home() {
               <a href="https://medium.com/@amodwrites" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-foreground hover:text-accent transition-colors group">
                 <MediumIcon className="w-5 h-5" />
                 <span className="font-mono text-sm">Medium</span>
+                <ExternalLink className="w-3 h-3 ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
+              </a>
+              <a href="https://notes.amod.dev/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-foreground hover:text-accent transition-colors group">
+                <ObsidianIcon className="w-5 h-5" />
+                <span className="font-mono text-sm">Digital Garden</span>
                 <ExternalLink className="w-3 h-3 ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
               </a>
               <a href="mailto:amodwrites@gmail.com" className="flex items-center gap-3 text-foreground hover:text-accent transition-colors group">
@@ -218,7 +224,7 @@ export default function Home() {
             <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-6">AI Forward Deployed Engineering</h2>
             <div className="space-y-6">
               <p className="text-base text-muted-foreground leading-relaxed">
-                As an <span className="text-accent font-medium">AI Forward Deployed Engineer</span>, I serve as the technical bridge between AI capabilities and strategic customers, embedding directly with client teams to architect, deploy, and scale custom AI solutions in production environments. Think of it as being a hands-on AI startup CTO for high-stakes enterprise projects.
+                As an <span className="text-accent font-medium">AI Forward Deployed Engineer</span>, I serve as the technical bridge between AI capabilities and strategic customers, embedding directly with client teams to architect, deploy, and scale custom AI solutions in production environments.
               </p>
               
               <div className="grid md:grid-cols-2 gap-6">

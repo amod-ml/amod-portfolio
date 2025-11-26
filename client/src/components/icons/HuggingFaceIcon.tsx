@@ -10,10 +10,13 @@ export default function HuggingFaceIcon({ className }: { className?: string }) {
       strokeLinejoin="round"
       className={className}
     >
-      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" />
-      <circle cx="8.5" cy="10" r="1.5" fill="currentColor" />
-      <circle cx="15.5" cy="10" r="1.5" fill="currentColor" />
-      <path d="M8 15c1 1 2.5 1.5 4 1.5s3-0.5 4-1.5" />
+      {/* Hugging hands emoji style */}
+      <path d="M6 10c-1 0-2 1-2 2v3c0 1 1 2 2 2h1" />
+      <path d="M18 10c1 0 2 1 2 2v3c0 1-1 2-2 2h-1" />
+      <circle cx="9" cy="9" r="1.5" fill="currentColor" />
+      <circle cx="15" cy="9" r="1.5" fill="currentColor" />
+      <path d="M9 13c.5.5 1.5 1 3 1s2.5-.5 3-1" />
+      <path d="M7 17c1 1 2 1.5 5 1.5s4-.5 5-1.5" />
     </svg>
   );
 }
